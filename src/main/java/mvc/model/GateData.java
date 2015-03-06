@@ -24,10 +24,39 @@ public class GateData {
     ArrayList<String> Phone;
     ArrayList<String> Saraly;
         
-    public void show() throws ClassNotFoundException, SQLException{
+    public void show(String searchby , String key) throws ClassNotFoundException, SQLException{
+        
+        String search = "";
+        if(searchby.equals("employee id")){
+            search = "employee_id";
+        }
+        if(searchby.equals("first name")){
+           search = "first_name"; 
+        }
+        if(searchby.equals("last name")){
+             search = "last_name";
+        }
+        if(searchby.equals("email")){
+             search = "email";
+        }
+        if(searchby.equals("salary")){
+            
+             search = "salary";
+        }
+        if(searchby.equals("phone")){
+             search = "phone_number";
+        }
+        
+        String sql = ""; 
+        if(key.equals("")){
+            sql = "select * from employees";
+        }
+        else{
+            sql = "select * from employees where "+search+" Like('%"+key+"%')";
+        }
         
         Connection cont = new ConDatabase().connect();
-        String sql = "select * from employees";        
+              
         EmployeeId = new ArrayList<String>();
         Firstn = new ArrayList<String>();
         Lastn = new ArrayList<String>();
@@ -99,7 +128,7 @@ public class GateData {
     
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         GateData gate = new GateData();
-        gate.show();
+        gate.show("","");
         for(int i=0;i<gate.getEmployeeId().size();i++){
             System.out.println(gate.getEmployeeId().get(i));
         }

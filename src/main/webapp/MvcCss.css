@@ -27,7 +27,7 @@
 }
 #labelsearch{
     top: 60px;
-    left: 400px; 
+    left: 347px; 
     position: absolute;
 }
 #selecttab{
@@ -172,4 +172,14 @@ thead > tr{
     left: 200px;
     top: 250px;
     color: blue;
+}
+#labelsearch1{
+    top: 50px;
+    left: 936px; 
+    position: absolute;
+}
+#inputsearch1{
+    top: 47px;
+    left: 1077px; 
+    position: absolute;
 }

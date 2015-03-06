@@ -17,15 +17,14 @@ public class InsertDatabase {
     public void Insert(String id,String fname,String lname,String email,String phone,double salary) throws ClassNotFoundException, SQLException{
         Connection conn = new ConDatabase().connect();
       
-         try {
-              
-             String idemp = id+"";
+         try {         
+           
              String sql = "INSERT INTO employees "
                           +"(employee_id,first_name,last_name, email ,phone_number,salary,job_id,hire_date)" 
                           + "values (?,?,?,?,?,?,?,SYSDATE)";
              
              PreparedStatement pre = conn.prepareStatement(sql);
-             pre.setString(1, idemp);
+             pre.setString(1, id);
              pre.setString(2, fname);
              pre.setString(3, lname);
              pre.setString(4, email);

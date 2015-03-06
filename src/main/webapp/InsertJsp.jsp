@@ -41,11 +41,12 @@
                 <div id="salary"><h3>Salary</h3></div>  
                 <input id="inputsalary" name="txtsalary" >
 
+                <input name="txtcode" value="0" type="hidden">
                 <button id="btnadd" type="submit">Add</button>
-                <input type="hidden" value="" name="txtcount">
+
 
             </form>
         </div
-        
+
     </body>
 </html>

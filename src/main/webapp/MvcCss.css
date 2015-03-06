@@ -1,0 +1,82 @@
+#body{
+    width: 1400px;
+    height: 2000px;
+    position: absolute;
+    border: solid 1px whitesmoke;
+    color: black;
+    background-color: whitesmoke;
+}
+#containner{    
+    width: 1400px;
+    height: 180px;
+    position: absolute;
+    border: solid 1px whitesmoke;
+    color: black;
+    background-color: buttonface;
+
+}
+#buttonsearch{
+    top: 60px;
+    left: 622px; 
+    position: absolute;
+}
+#inputsearch{
+    top: 60px;
+    left: 450px; 
+    position: absolute;
+}
+#labelsearch{
+    top: 60px;
+    left: 400px; 
+    position: absolute;
+}
+#selecttab{
+    height: 21px;
+    top: 60px;
+    left: 680px; 
+    position: absolute;
+}
+#buttondelete{
+    top: 20px;
+    width: 100px;    
+    left: 640px; 
+    position: absolute;
+}
+#buttonupdate{
+    top: 20px;
+    width: 100px;    
+    left: 520px; 
+    position: absolute;
+}
+#buttoninsert{
+    top: 20px;
+    width: 100px;    
+    left: 400px; 
+    position: absolute;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 20px;
+    position: absolute;
+    top: 180px;
+}
+
+td, th{
+    padding: 10px;
+}
+
+td{
+    border : solid 1px #eee;
+
+}
+
+thead > tr{
+    background-color: #fafafa;
+    
+}
+#cno{
+    width: 50px;
+}
+#employee, #firstn, #lastn, #email, #phone ,#salaly ,#showdata{
+    width: 160px;
+}

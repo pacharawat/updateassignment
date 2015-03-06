@@ -14,7 +14,7 @@
     <body id ="body">           
         <link rel="stylesheet" href="MvcCss.css" > 
         <div id="containner">            
-            <form method="post" action="SearchJsp.jsp">
+            <form method="post" action="UpdateJsp.jsp">
                 <button id="buttonupdate">Update</button>
             </form>
             <form method="post" action="DeleteJsp.jsp">
@@ -46,7 +46,6 @@
 
             </form>
         </div
-
-
+        
     </body>
 </html>

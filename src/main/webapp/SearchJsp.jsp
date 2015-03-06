@@ -45,7 +45,6 @@
             <form method="post" action="InsertJsp.jsp">
                 <button id="buttoninsert">Insert</button>
             </form>           
-           
             <form method="post" action="UpdateJsp.jsp">
                 <button id="buttonupdate">Update</button>
             </form>

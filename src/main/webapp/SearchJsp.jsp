@@ -4,6 +4,7 @@
     Author     : kasem
 --%>
 
+<%@page import="mvc.controler.InsertDatabase"%>
 <%@page import="mvc.model.GateData"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,11 +12,23 @@
     <head>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Test MVC Search</title>
     </head>
 
     <body id ="body">         
         <link rel="stylesheet" href="MvcCss.css" > 
+        <% if (request.getParameter("txtfname") != null) {
+                String id = request.getParameter("txtid");
+                String fname = request.getParameter("txtfname");
+                String lname = request.getParameter("txtlname");
+                String email = request.getParameter("txtemail");
+                String phone = request.getParameter("txtphone");
+                String salary = request.getParameter("txtsalary");
+                
+                InsertDatabase insert = new InsertDatabase();
+                insert.Insert(id, fname, lname, email, phone,Double.parseDouble(salary));
+            }
+        %> 
         <div id="containner">
             <label id="labelsearch">Search</label>
             <input id="inputsearch">
@@ -28,17 +41,18 @@
                 <option>salary</option>
             </select>
             <button id="buttonsearch">Search</button>
-           
+
             <form method="post" action="InsertJsp.jsp">
                 <button id="buttoninsert">Insert</button>
             </form>           
+           
             <form method="post" action="UpdateJsp.jsp">
                 <button id="buttonupdate">Update</button>
             </form>
             <form method="post" action="DeleteJsp.jsp">
                 <button id="buttondelete">Delete</button>
             </form>
-           
+
         </div>
 
         <table>

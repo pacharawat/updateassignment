@@ -80,3 +80,96 @@ thead > tr{
 #employee, #firstn, #lastn, #email, #phone ,#salaly ,#showdata{
     width: 160px;
 }
+#id{
+    position: absolute;
+    margin-left: 100px;
+    top: 30px;
+}
+#inputid{
+    width: 70px;
+    position: absolute;
+    margin-left: 125px;
+    top: 50px;
+}
+
+#firstname{
+    position: absolute;
+    margin-left: 30px;
+    top: 60px;
+}
+#inputfirstname{
+    width: 180px;
+    position: absolute;
+    margin-left: 125px;
+    top:80px; 
+}
+#lastname{
+    position: absolute;
+    margin-left: 380px;
+    top: 60px;  
+}
+#inputlastname{
+    width: 180px;
+    position: absolute;
+    margin-left: 510px;
+    top: 80px; 
+}
+#email1{
+    position: absolute;
+    margin-left: 62px;
+    top: 90px;
+}
+#inputemail{
+    width: 220px;
+    position: absolute;
+    margin-left: 125px;
+    top: 110px; 
+}
+#phone1{
+    position:absolute;
+    margin-left:380px;
+    top:90px;
+}
+#inputphone{
+    width: 150px;
+    position: absolute;
+    margin-left: 510px;
+    top: 110px; 
+}
+#salary{
+    position: absolute;
+    margin-left: 711px;
+    top: 60px;
+}
+#inputsalary{
+    width: 100px;
+    position: absolute;
+    margin-left: 775px;
+    top: 80px; 
+}
+#btnadd{
+    width: 100px;
+    height: 51px;
+    position: absolute;
+    left: 900px;
+    top: 80px;
+}
+#btnback{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 245px;
+    top: 200px;
+}
+#outinsert1{
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    color: red;
+}
+#outinsert2{
+     position: absolute;
+    left: 200px;
+    top: 250px;
+    color: blue;
+}

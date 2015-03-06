@@ -13,18 +13,8 @@
     </head>
     <body id ="body">           
         <link rel="stylesheet" href="MvcCss.css" > 
-        <div id="containner">
-            <label id="labelsearch">Insert</label>
-            <input id="inputsearch">
-            <select id ="selecttab">
-                <option>employee id</option>
-                <option>first name</option>
-                <option>last name</option>
-                <option>email</option>
-                <option>phone</option>
-                <option>salary</option>
-            </select> 
-            <form method="post" action="UpdateJsp.jsp">
+        <div id="containner">            
+            <form method="post" action="SearchJsp.jsp">
                 <button id="buttonupdate">Update</button>
             </form>
             <form method="post" action="DeleteJsp.jsp">
@@ -32,6 +22,28 @@
             </form>
             <form method="post" action="SearchJsp.jsp"> 
                 <button id="buttoninsert">Back start</button>
+            </form>
+
+            <form id="fromadd" method="post" action="SearchJsp.jsp">
+                <div id="id"><h3>Id</h3></div>  
+                <input id="inputid" name="txtid">
+
+                <div id="firstname"><h3>First Name</h3></div>  
+                <input id="inputfirstname" name="txtfname"  >
+                <div id="lastname"><h3>Last Name</h3></div>  
+                <input id="inputlastname" name="txtlname" >
+
+                <div id="email1"><h3>E-mail</h3></div>  
+                <input id="inputemail" name="txtemail" >
+                <div id="phone1"><h3>Phone Number</h3></div>  
+                <input id="inputphone" name="txtphone" >
+
+                <div id="salary"><h3>Salary</h3></div>  
+                <input id="inputsalary" name="txtsalary" >
+
+                <button id="btnadd" type="submit">Add</button>
+                <input type="hidden" value="" name="txtcount">
+
             </form>
         </div
 

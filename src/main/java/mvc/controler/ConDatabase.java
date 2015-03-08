@@ -15,8 +15,8 @@ import java.sql.SQLException;
  */
 public class ConDatabase {
     public Connection connect() throws ClassNotFoundException, SQLException{
-     String user = "hr";
-     String password = "hr";
+     String user = "HR";
+     String password = "HR";
      String url = "jdbc:oracle:thin:@localhost:1521:orcl";
      String driver = "oracle.jdbc.OracleDriver";
      Class.forName(driver);

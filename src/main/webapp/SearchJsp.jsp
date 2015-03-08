@@ -14,7 +14,7 @@
     <head>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Test MVC Search</title>
+        <title>Assignment insert update delete</title>
     </head>
 
     <body id ="body">         
@@ -63,6 +63,7 @@
                 }
             }
         %> 
+        
         <div id="containner">
             <label id="labelsearch">Search</label>
             <form method="post" action="SearchJsp.jsp">

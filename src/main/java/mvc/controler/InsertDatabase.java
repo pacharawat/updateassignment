@@ -14,7 +14,8 @@ import java.sql.SQLException;
  * @author kasem
  */
 public class InsertDatabase {
-    public void Insert(String id,String fname,String lname,String email,String phone,double salary) throws ClassNotFoundException, SQLException{
+    public void Insert(String id,String fname,String lname,String email,String phone,double salary) 
+    throws ClassNotFoundException, SQLException{
         Connection conn = new ConDatabase().connect();
       
          try {         
